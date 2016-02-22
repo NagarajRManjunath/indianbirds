@@ -19268,23 +19268,26 @@ angular.module("app").constant("JQ_CONFIG", {
         url: "/about",
         templateUrl: "tpl/app_about.html",
         resolve: e(["js/controllers/about.js"])
-    }).state("app.dashboard-v2", {
-        url: "/dashboard-v2",
-        templateUrl: "tpl/app_dashboard_v2.html",
-        resolve: e(["js/controllers/chart.js"])
-    }).state("app.dashboard-v3", {
-        url: "/dashboard-v3",
-        templateUrl: "tpl/app_dashboard_v3.html",
-        resolve: e(["js/controllers/chart.js"])
-    }).state("app.ui", {
-        url: "/ui",
-        template: '<div ui-view class="fade-in-up"></div>'
-    }).state("app.ui.buttons", {
-        url: "/buttons",
-        templateUrl: "tpl/ui_buttons.html"
-    }).state("app.ui.icons", {
-        url: "/icons",
-        templateUrl: "tpl/ui_icons.html"
+    }).state("app.signup_0029_26", {
+        url: "/signup_0029_26",
+        templateUrl: "tpl/app_signup_0029_26.html",
+        resolve: e(["js/controllers/signup.js"])
+    }).state("app.signup_0030_27", {
+        url: "/signup_0030_27",
+        templateUrl: "tpl/app_signup_0030_27.html",
+        resolve: e(["js/controllers/signup.js"])
+    }).state("app.signup_0031_28", {
+        url: "/signup_0031_28",
+        templateUrl: "tpl/app_signup_0031_28.html",
+         resolve: e(["js/controllers/signup.js"])
+    }).state("app.signup_0033_30", {
+        url: "/signup_0033_30",
+        templateUrl: "tpl/app_signup_0033_30.html",
+         resolve: e(["js/controllers/signup.js"])
+    }).state("app.signup_0032_29", {
+        url: "/signup_0032_29",
+        templateUrl: "tpl/app_signup_0032_29.html",
+         resolve: e(["js/controllers/signup.js"])
     }).state("app.ui.grid", {
         url: "/grid",
         templateUrl: "tpl/ui_grid.html"
@@ -19575,21 +19578,14 @@ angular.module("app").constant("JQ_CONFIG", {
     })
 }]), angular.module("app").controller("AppCtrl", ["$scope", "$translate", "$localStorage", "$window", function(a, b, c, d) {
     a.name= "Indian Birds";
-    a.factory('Page', function(){
-  var title = 'default';
-  return {
-    title: function() { return title; },
-    setTitle: function(newTitle) { title = newTitle; }
-  };
-});
+   
     function e(a) {
         var b = a.navigator.userAgent || a.navigator.vendor || a.opera;
         return /iPhone|iPod|iPad|Silk|Android|BlackBerry|Opera Mini|IEMobile/.test(b)
     }
-
-    var f = !!navigator.userAgent.match(/MSIE/i);
+      var f = !!navigator.userAgent.match(/MSIE/i);
     f && angular.element(d.document.body).addClass("ie"), e(d) && angular.element(d.document.body).addClass("smart"), a.app = {
-        
+        dummyPara:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id neque quam. Aliquam sollicitudin venenatis ipsum ac feugiat. Vestibulum ullamcorper sodales nisi nec condimentum. Mauris convallis mauris at pellentesque volutpat. ",
         version: "2.2.0",
         color: {
             primary: "#7266ba",
@@ -20007,3 +20003,4 @@ angular.module("app").constant("JQ_CONFIG", {
         a.mytime = null
     }
 }]);
+ 

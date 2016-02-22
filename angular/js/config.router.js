@@ -37,27 +37,30 @@ angular.module('app')
                   templateUrl: 'tpl/app_about.html',
                   resolve: load(['js/controllers/about.js'])
               })
-              .state('app.dashboard-v2', {
-                  url: '/dashboard-v2',
-                  templateUrl: 'tpl/app_dashboard_v2.html',
-                  resolve: load(['js/controllers/chart.js'])
+              .state('app.signup_0029_26', {
+                  url: '/signup_0029_26',
+                  templateUrl: 'tpl/app_signup_0029_26.html',
+                  resolve: load(['js/controllers/signup.js'])
               })
-              .state('app.dashboard-v3', {
-                  url: '/dashboard-v3',
-                  templateUrl: 'tpl/app_dashboard_v3.html',
-                  resolve: load(['js/controllers/chart.js'])
+              .state('app.signup_0030_27', {
+                  url: '/signup_0030_27',
+                  templateUrl: 'tpl/app_signup_0030_27.html',
+                  resolve: load(['js/controllers/signup.js'])
               })
-              .state('app.ui', {
-                  url: '/ui',
-                  template: '<div ui-view class="fade-in-up"></div>'
+              .state('app.signup_0031_28', {
+                  url: '/signup_0031_28',
+                  templateUrl: "tpl/app_signup_0031_28.html",
+                  resolve: load(['js/controllers/signup.js'])
               })
-              .state('app.ui.buttons', {
-                  url: '/buttons',
-                  templateUrl: 'tpl/ui_buttons.html'
+              .state('app.signup_0033_30', {
+                  url: '/signup_0033_30',
+                  templateUrl: "tpl/app_signup_0033_30.html",
+                  resolve: load(['js/controllers/signup.js'])
               })
-              .state('app.ui.icons', {
-                  url: '/icons',
-                  templateUrl: 'tpl/ui_icons.html'
+               .state('app.signup_0032_29', {
+                  url: '/signup_0032_29',
+                  templateUrl: "tpl/app_signup_0032_29.html",
+                  resolve: load(['js/controllers/signup.js'])
               })
               .state('app.ui.grid', {
                   url: '/grid',
@@ -469,13 +472,7 @@ angular.module('app')
                 }]
             }
           }
- $scope.Page= function() {
-   var title = 'asd';
-   return {
-     title: function() { return title; },
-     setTitle: function(newTitle) { title = newTitle }
-   };
-});
+
 
       }
     ]

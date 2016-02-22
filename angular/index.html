@@ -2,7 +2,7 @@
 <html lang="en" data-ng-app="app">
 <head>
   <meta charset="utf-8" />
-  <title>Angular version | Angulr</title>
+  <title>FLOCKT</title>
   <meta name="description" content="Angularjs, Html5, Music, Landing, 4 in 1 ui kits package" />
   <meta name="keywords" content="AngularJS, angular, bootstrap, admin, dashboard, panel, app, charts, components,flat, responsive, layout, kit, ui, route, web, app, widgets" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -13,8 +13,10 @@
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
   <link rel="stylesheet" href="css/app.min.css">
 </head>
-<body ng-controller="AppCtrl">
-  <div class="app" id="app" ng-class="{'app-header-fixed':app.settings.headerFixed, 'app-aside-fixed':app.settings.asideFixed, 'app-aside-folded':app.settings.asideFolded, 'app-aside-dock':app.settings.asideDock, 'container':app.settings.container}" ui-view></div>
+<body ng-controller="AppCtrl" class="bg-white-only">
+
+  <div class="app" id="app" ng-class="{ 'app-aside-dock':app.settings.asideDock, 'container':app.settings.container} " ui-view></div>
+
 
 <script src="js/app.angular.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>

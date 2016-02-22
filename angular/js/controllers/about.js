@@ -3,12 +3,10 @@
 // signup controller
 app.controller('AboutPageController', ['$scope', '$http', '$state', function($scope, $http, $state) {
   $scope.user = {};
-   Page.setTitle('title1');
-  a.SideNav=true;
-    $scope.name="asd";
+  $scope.name="About";
+
     $scope.authError = null;
-    $scope.message="You can have different member profile (including display name) for each community, but your contact details (used for verification) shall not be shared publicaly in any of them";
-    $scope.information='You need a flockt ID to access Indian Birds and other communities.';
+    $scope.heading="India's Best Birding Community";
     $scope.nextShow='true'
      $scope.isdCode = [
         {value: 91, text: '+91' },
@@ -30,14 +28,6 @@ app.controller('AboutPageController', ['$scope', '$http', '$state', function($sc
         $scope.authError = 'Server Error';
       });
     };
-    function Test1Ctrl($scope, Page) {
- 
-}
-  }]);
-app.factory('Page', function(){
-  var title = 'default';
-  return {
-    title: function() { return title; },
-    setTitle: function(newTitle) { title = newTitle; }
-  };
-});
+    
+  }])
+ ;
